@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>SON</title>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
+        <meta name="description" content="A website about a 12 year old programmer named Ethan."/>
+        <meta name="keywords" content="Ethan Arterberry, landing page, land, page, description, social links" />
+        <meta name="author" content="Ethan Arterberry">
+        <script>
+        function redirect() {
+            window.location.href = "wheredyou.html";
+        }
+        </script>
+    </head>
+    <body>
+        <div style="position: fixed; /*or absolute*/ left: 50%; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); font-family: 'Raleway', sans-serif;">
+            <h1 style="font-size: 72pt;">SON</h1>
+        </div>
+        <audio id="son" src="sounds/son.mp3" onended="redirect()"></audio>
+        <script>
+        var sound = document.getElementById("son");
+        sound.play();
+        </script>
+    </body>
+</html>
